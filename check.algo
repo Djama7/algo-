@@ -1,0 +1,31 @@
+ALGORITHM check point algo 
+VAR
+c : CHAR;
+cc,cv :INTEGER := 0;
+cw : INTEGER := 1;
+    
+BEGIN
+REPEAT
+ 
+Write("entrez un caractere");
+Read(c);
+
+cc :=cc + 1 ;
+IF 
+ (c = " " AND cc <> 1) THEN 
+cw = cw + 1 ;
+END_IF
+
+
+
+IF (c="a" OR c="e", OR c="i" OR c="u" OR c="y") THEN 
+cv = cv + 1;
+
+END_IF
+
+UNTIL (c=".");
+
+
+write (cc,cw,cv);
+    
+END
